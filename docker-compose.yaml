@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  news-bot:
+    build: .
+    container_name: world-news-bot
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+    environment:
+      - TZ=Europe/Berlin
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

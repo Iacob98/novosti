@@ -1,0 +1,60 @@
+# Независимые источники США
+
+rss_sources:
+  # Некоммерческие / Public media
+  - name: "NPR News"
+    url: "https://feeds.npr.org/1001/rss.xml"
+    language: "en"
+    categories: ["general", "nonprofit"]
+    priority: 1
+
+  - name: "PBS NewsHour"
+    url: "https://www.pbs.org/newshour/feeds/rss/headlines"
+    language: "en"
+    categories: ["general", "nonprofit"]
+    priority: 1
+
+  - name: "ProPublica"
+    url: "https://www.propublica.org/feeds/propublica/main"
+    language: "en"
+    categories: ["investigations", "nonprofit"]
+    priority: 1
+
+  - name: "The Intercept"
+    url: "https://theintercept.com/feed/?rss"
+    language: "en"
+    categories: ["investigations", "independent"]
+    priority: 1
+
+  # Качественные издания
+  - name: "The Atlantic"
+    url: "https://www.theatlantic.com/feed/all/"
+    language: "en"
+    categories: ["analysis"]
+    priority: 1
+
+  - name: "Axios"
+    url: "https://api.axios.com/feed/"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Foreign Policy"
+    url: "https://foreignpolicy.com/feed/"
+    language: "en"
+    categories: ["world", "analysis"]
+    priority: 1
+
+  - name: "Vox"
+    url: "https://www.vox.com/rss/index.xml"
+    language: "en"
+    categories: ["explainers"]
+    priority: 2
+
+  - name: "The Hill"
+    url: "https://thehill.com/feed/"
+    language: "en"
+    categories: ["politics"]
+    priority: 2
+
+api_sources: []

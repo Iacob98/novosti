@@ -1,0 +1,48 @@
+# Независимые индийские источники
+
+rss_sources:
+  # Независимые цифровые
+  - name: "The Wire"
+    url: "https://thewire.in/feed"
+    language: "en"
+    categories: ["independent", "investigations"]
+    priority: 1
+
+  - name: "Newslaundry"
+    url: "https://www.newslaundry.com/feed"
+    language: "en"
+    categories: ["media criticism", "independent"]
+    priority: 1
+
+  # Качественные традиционные
+  - name: "The Hindu"
+    url: "https://www.thehindu.com/feeder/default.rss"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Hindustan Times"
+    url: "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml"
+    language: "en"
+    categories: ["india"]
+    priority: 1
+
+  - name: "NDTV"
+    url: "https://feeds.feedburner.com/ndtvnews-top-stories"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Times of India"
+    url: "https://timesofindia.indiatimes.com/rssfeedstopstories.cms"
+    language: "en"
+    categories: ["general"]
+    priority: 2
+
+  - name: "Mint"
+    url: "https://www.livemint.com/rss/news"
+    language: "en"
+    categories: ["business"]
+    priority: 2
+
+api_sources: []

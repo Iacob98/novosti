@@ -1,0 +1,54 @@
+# Независимые источники Латинской Америки
+
+rss_sources:
+  # Англоязычные о регионе
+  - name: "Americas Quarterly"
+    url: "https://www.americasquarterly.org/feed/"
+    language: "en"
+    categories: ["latam", "analysis"]
+    priority: 1
+
+  - name: "MercoPress"
+    url: "https://en.mercopress.com/rss/latin-america"
+    language: "en"
+    categories: ["latam"]
+    priority: 1
+
+  - name: "Buenos Aires Times"
+    url: "https://www.batimes.com.ar/feed"
+    language: "en"
+    categories: ["argentina"]
+    priority: 1
+
+  - name: "Brazil Reports"
+    url: "https://brazilreports.com/feed/"
+    language: "en"
+    categories: ["brazil"]
+    priority: 1
+
+  # Испаноязычные независимые
+  - name: "BBC Mundo"
+    url: "https://feeds.bbci.co.uk/mundo/rss.xml"
+    language: "es"
+    categories: ["general"]
+    priority: 1
+
+  - name: "CIPER Chile"
+    url: "https://www.ciperchile.cl/feed/"
+    language: "es"
+    categories: ["chile", "investigations"]
+    priority: 1
+
+  - name: "El Faro"
+    url: "https://elfaro.net/es/rss/"
+    language: "es"
+    categories: ["central_america", "investigations"]
+    priority: 1
+
+  - name: "Agência Pública"
+    url: "https://apublica.org/feed/"
+    language: "pt"
+    categories: ["brazil", "investigations"]
+    priority: 1
+
+api_sources: []

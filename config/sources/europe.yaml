@@ -1,0 +1,68 @@
+# Независимые европейские источники
+
+rss_sources:
+  # Общеевропейские
+  - name: "Politico Europe"
+    url: "https://www.politico.eu/feed/"
+    language: "en"
+    categories: ["europe", "politics"]
+    priority: 1
+
+  - name: "Euronews"
+    url: "https://www.euronews.com/rss"
+    language: "en"
+    categories: ["europe"]
+    priority: 1
+
+  - name: "EUobserver"
+    url: "https://euobserver.com/rss"
+    language: "en"
+    categories: ["eu", "independent"]
+    priority: 1
+
+  # Германия
+  - name: "Deutsche Welle"
+    url: "https://rss.dw.com/rdf/rss-en-all"
+    language: "en"
+    categories: ["germany"]
+    priority: 1
+
+  - name: "Der Spiegel International"
+    url: "https://www.spiegel.de/international/index.rss"
+    language: "en"
+    categories: ["germany", "analysis"]
+    priority: 1
+
+  # UK
+  - name: "The Guardian"
+    url: "https://www.theguardian.com/world/rss"
+    language: "en"
+    categories: ["world"]
+    priority: 1
+
+  - name: "The Guardian Europe"
+    url: "https://www.theguardian.com/world/europe-news/rss"
+    language: "en"
+    categories: ["europe"]
+    priority: 1
+
+  - name: "BBC World"
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+    language: "en"
+    categories: ["world"]
+    priority: 1
+
+  # Украина
+  - name: "Ukrainska Pravda (EN)"
+    url: "https://www.pravda.com.ua/eng/rss/"
+    language: "en"
+    categories: ["ukraine"]
+    priority: 1
+
+  - name: "Euromaidan Press"
+    url: "https://euromaidanpress.com/feed/"
+    language: "en"
+    categories: ["ukraine", "independent"]
+    priority: 1
+
+api_sources: []

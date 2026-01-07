@@ -1,0 +1,58 @@
+# Независимые источники о Ближнем Востоке
+
+rss_sources:
+  - name: "Middle East Eye"
+    url: "https://www.middleeasteye.net/rss"
+    language: "en"
+    categories: ["middle_east", "independent"]
+    priority: 1
+
+  - name: "+972 Magazine"
+    url: "https://www.972mag.com/feed/"
+    language: "en"
+    categories: ["israel", "palestine", "independent"]
+    priority: 1
+
+  - name: "The New Arab"
+    url: "https://www.newarab.com/rss"
+    language: "en"
+    categories: ["middle_east"]
+    priority: 1
+
+  - name: "Middle East Monitor"
+    url: "https://www.middleeastmonitor.com/feed/"
+    language: "en"
+    categories: ["middle_east"]
+    priority: 1
+
+  - name: "Haaretz"
+    url: "https://www.haaretz.com/srv/haaretz-latest-headlines"
+    language: "en"
+    categories: ["israel", "independent"]
+    priority: 1
+
+  - name: "Times of Israel"
+    url: "https://www.timesofisrael.com/feed/"
+    language: "en"
+    categories: ["israel"]
+    priority: 1
+
+  - name: "The Jerusalem Post"
+    url: "https://www.jpost.com/rss/rssfeedsfrontpage.aspx"
+    language: "en"
+    categories: ["israel"]
+    priority: 2
+
+  - name: "Al-Monitor"
+    url: "https://www.al-monitor.com/rss"
+    language: "en"
+    categories: ["middle_east", "analysis"]
+    priority: 1
+
+  - name: "IranWire"
+    url: "https://iranwire.com/en/feed/"
+    language: "en"
+    categories: ["iran", "independent"]
+    priority: 1
+
+api_sources: []

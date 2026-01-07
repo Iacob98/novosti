@@ -1,0 +1,89 @@
+app:
+  name: "World News Aggregator"
+  version: "1.0.0"
+  debug: false
+
+database:
+  path: "data/news.db"
+
+llm:
+  provider: "openrouter"
+  base_url: "https://openrouter.ai/api/v1"
+  default_model: "anthropic/claude-3.5-sonnet"
+  fallback_model: "openai/gpt-4o-mini"
+  max_tokens_summary: 2000
+  max_tokens_translation: 4000
+  temperature: 0.3
+
+telegram:
+  parse_mode: "HTML"
+  disable_preview: true
+  max_message_length: 4096
+  retry_attempts: 3
+  retry_delay_seconds: 5
+
+scheduler:
+  frequency: 2  # 1, 2, or 3 times per day
+  delivery_times:
+    - "08:00"
+    - "20:00"
+
+regions:
+  - usa
+  - china
+  - japan
+  - india
+  - europe
+  - middle_east
+  - latam
+  - russia
+
+region_info:
+  usa:
+    name_ru: "США"
+    name_en: "United States"
+    timezone: "America/New_York"
+    emoji: "🇺🇸"
+    primary_language: "en"
+  china:
+    name_ru: "Китай"
+    name_en: "China"
+    timezone: "Asia/Shanghai"
+    emoji: "🇨🇳"
+    primary_language: "zh"
+  japan:
+    name_ru: "Япония"
+    name_en: "Japan"
+    timezone: "Asia/Tokyo"
+    emoji: "🇯🇵"
+    primary_language: "ja"
+  india:
+    name_ru: "Индия"
+    name_en: "India"
+    timezone: "Asia/Kolkata"
+    emoji: "🇮🇳"
+    primary_language: "en"
+  europe:
+    name_ru: "Европа"
+    name_en: "Europe"
+    timezone: "Europe/Berlin"
+    emoji: "🇪🇺"
+    primary_language: "en"
+  middle_east:
+    name_ru: "Ближний Восток"
+    name_en: "Middle East"
+    timezone: "Asia/Dubai"
+    emoji: "🌍"
+    primary_language: "ar"
+  latam:
+    name_ru: "Латинская Америка"
+    name_en: "Latin America"
+    timezone: "America/Sao_Paulo"
+    emoji: "🌎"
+    primary_language: "es"
+  russia:
+    name_ru: "Россия"
+    name_en: "Russia"
+    timezone: "Europe/Moscow"
+    emoji: "🇷🇺"
+    primary_language: "ru"

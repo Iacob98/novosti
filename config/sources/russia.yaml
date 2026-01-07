@@ -1,0 +1,46 @@
+# Независимые российские источники
+
+rss_sources:
+  - name: "Meduza"
+    url: "https://meduza.io/rss2/all"
+    language: "ru"
+    categories: ["independent"]
+    priority: 1
+
+  - name: "Медиазона"
+    url: "https://zona.media/rss"
+    language: "ru"
+    categories: ["independent", "rights"]
+    priority: 1
+
+  - name: "Холод"
+    url: "https://holod.media/feed/"
+    language: "ru"
+    categories: ["independent"]
+    priority: 1
+
+  - name: "Агентство"
+    url: "https://www.agents.media/feed/"
+    language: "ru"
+    categories: ["investigations"]
+    priority: 1
+
+  - name: "Такие дела"
+    url: "https://takiedela.ru/feed/"
+    language: "ru"
+    categories: ["social", "independent"]
+    priority: 1
+
+  - name: "The Moscow Times"
+    url: "https://www.themoscowtimes.com/rss/news"
+    language: "en"
+    categories: ["russia", "independent"]
+    priority: 1
+
+  - name: "Meduza English"
+    url: "https://meduza.io/rss/en/all"
+    language: "en"
+    categories: ["russia", "independent"]
+    priority: 1
+
+api_sources: []

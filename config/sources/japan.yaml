@@ -1,0 +1,58 @@
+# Независимые источники о Японии
+
+rss_sources:
+  - name: "Japan Times"
+    url: "https://www.japantimes.co.jp/feed/"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Nikkei Asia"
+    url: "https://asia.nikkei.com/rss/feed/nar"
+    language: "en"
+    categories: ["business", "asia"]
+    priority: 1
+
+  - name: "The Diplomat"
+    url: "https://thediplomat.com/feed/"
+    language: "en"
+    categories: ["asia", "analysis"]
+    priority: 1
+
+  - name: "Japan Today"
+    url: "https://japantoday.com/feed"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Mainichi"
+    url: "https://mainichi.jp/english/rss/etc/newsflash.rss"
+    language: "en"
+    categories: ["general"]
+    priority: 1
+
+  - name: "Tokyo Reporter"
+    url: "https://www.tokyoreporter.com/feed/"
+    language: "en"
+    categories: ["local", "independent"]
+    priority: 2
+
+  - name: "SoraNews24"
+    url: "https://soranews24.com/feed/"
+    language: "en"
+    categories: ["culture", "lifestyle"]
+    priority: 2
+
+  - name: "Tokyo Weekender"
+    url: "https://www.tokyoweekender.com/feed/"
+    language: "en"
+    categories: ["lifestyle"]
+    priority: 2
+
+  - name: "Unseen Japan"
+    url: "https://unseenjapan.com/feed/"
+    language: "en"
+    categories: ["culture", "independent"]
+    priority: 2
+
+api_sources: []

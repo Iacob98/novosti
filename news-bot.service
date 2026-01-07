@@ -1,0 +1,15 @@
+[Unit]
+Description=World News Aggregator Bot
+After=network.target
+
+[Service]
+Type=simple
+User=iacob
+WorkingDirectory=/home/iacob/Documents/news
+ExecStart=/home/iacob/Documents/news/venv/bin/python -m src.main run
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

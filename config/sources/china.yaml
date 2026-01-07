@@ -1,0 +1,46 @@
+# Независимые источники о Китае
+
+rss_sources:
+  - name: "South China Morning Post"
+    url: "https://www.scmp.com/rss/91/feed"
+    language: "en"
+    categories: ["china", "hongkong"]
+    priority: 1
+
+  - name: "Hong Kong Free Press"
+    url: "https://hongkongfp.com/feed/"
+    language: "en"
+    categories: ["hongkong", "independent"]
+    priority: 1
+
+  - name: "Taiwan News"
+    url: "https://www.taiwannews.com.tw/rss"
+    language: "en"
+    categories: ["taiwan", "china"]
+    priority: 1
+
+  - name: "Taipei Times"
+    url: "https://www.taipeitimes.com/xml/index.rss"
+    language: "en"
+    categories: ["taiwan"]
+    priority: 1
+
+  - name: "China Digital Times"
+    url: "https://chinadigitaltimes.net/feed/"
+    language: "en"
+    categories: ["china", "censorship"]
+    priority: 1
+
+  - name: "The China Project"
+    url: "https://thechinaproject.com/feed/"
+    language: "en"
+    categories: ["china", "analysis"]
+    priority: 1
+
+  - name: "Asia Times"
+    url: "https://asiatimes.com/feed/"
+    language: "en"
+    categories: ["asia"]
+    priority: 2
+
+api_sources: []
