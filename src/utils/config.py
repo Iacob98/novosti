@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     """Application settings from environment variables."""
     openrouter_api_key: str = ""
     telegram_bot_token: str = ""
-    telegram_chat_id: str = ""
+    telegram_chat_id: str = ""  # Can be comma-separated for multiple users
     newsapi_key: str = ""
     user_timezone: str = "Europe/Moscow"
     log_level: str = "INFO"
@@ -23,6 +23,12 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         extra = "ignore"
+
+    def get_chat_ids(self) -> list[str]:
+        """Get list of chat IDs (supports comma-separated values)."""
+        if not self.telegram_chat_id:
+            return []
+        return [cid.strip() for cid in self.telegram_chat_id.split(",") if cid.strip()]
 
 
 def load_yaml_config(config_path: str = "config/config.yaml") -> dict:

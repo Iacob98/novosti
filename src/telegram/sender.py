@@ -24,7 +24,7 @@ class TelegramSender:
         config = get_config()
 
         self.bot = Bot(token=settings.telegram_bot_token)
-        self.chat_id = settings.telegram_chat_id
+        self.chat_ids = settings.get_chat_ids()  # Support multiple users
         self.formatter = TelegramFormatter()
         self.db = db or Database()
 
@@ -69,11 +69,25 @@ class TelegramSender:
         return results
 
     async def _send_message(self, text: str) -> bool:
-        """Send a message with retry logic."""
+        """Send a message to all configured chat IDs with retry logic."""
+        if not self.chat_ids:
+            logger.error("No chat IDs configured")
+            return False
+
+        all_success = True
+        for chat_id in self.chat_ids:
+            success = await self._send_to_chat(text, chat_id)
+            if not success:
+                all_success = False
+
+        return all_success
+
+    async def _send_to_chat(self, text: str, chat_id: str) -> bool:
+        """Send a message to a single chat ID with retry logic."""
         for attempt in range(self.retry_attempts):
             try:
                 await self.bot.send_message(
-                    chat_id=self.chat_id,
+                    chat_id=chat_id,
                     text=text,
                     parse_mode=ParseMode.HTML,
                     disable_web_page_preview=True
@@ -81,7 +95,7 @@ class TelegramSender:
                 return True
 
             except TelegramError as e:
-                logger.error(f"Telegram error (attempt {attempt + 1}): {e}")
+                logger.error(f"Telegram error for {chat_id} (attempt {attempt + 1}): {e}")
 
                 if attempt < self.retry_attempts - 1:
                     await asyncio.sleep(self.retry_delay)
@@ -89,7 +103,7 @@ class TelegramSender:
                     return False
 
             except Exception as e:
-                logger.error(f"Unexpected error sending message: {e}")
+                logger.error(f"Unexpected error sending to {chat_id}: {e}")
                 return False
 
         return False
